@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@color/cardview_shadow_start_color">
+
+    <androidx.cardview.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:layout_marginRight="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="#E86592"
+        app:cardCornerRadius="32dp"
+        android:id="@+id/card"
+        >
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/img"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:text="This is one of the best applications around"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="150dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:text="The best application for mobile banking"
+            android:gravity="center"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded"
+            app:backgroundTint="@color/white"
+            android:text="play Radio"
+            android:textColor="@color/black"
+            android:layout_marginRight="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginBottom="32dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="DISMISS"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/card"
+        />
+
+
+</RelativeLayout>
